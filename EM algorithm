@@ -30,3 +30,17 @@ plt.title('GMM Classification')
 plt.scatter(X.Petal_Length,X.Petal_Width,c=colormap[y_cluster_gmm])
 print('The accuracy score of EM: ',metrics.accuracy_score(y, y_cluster_gmm))
 print('The Confusion matrix of EM:\n ',metrics.confusion_matrix(y, y_cluster_gmm)
+
+'''
+Output:
+The accuracy score of K-Mean: 0.24
+The Confusion matrixof K-Mean:
+[[ 0 50 0]
+[48 0 2]
+[14 0 36]]
+The accuracy score of EM: 0.36666666666666664
+The Confusion matrix of EM:
+[[50 0 0]
+[ 0 5 45]
+[ 0 50 0]]
+'''
